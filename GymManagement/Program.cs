@@ -1,7 +1,25 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using GymManagement.Models;
+using MySql.Data.MySqlClient;
+using System.Data;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddScoped<IDbConnection>((s) =>
+{
+    IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("AnyGym"));
+    conn.Open();
+    return conn;
+});
+
+builder.Services.AddTransient<IProductsAll, ProductAll>();
+
+
+
+
 
 var app = builder.Build();
 

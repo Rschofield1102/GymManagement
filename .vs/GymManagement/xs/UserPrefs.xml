@@ -8,12 +8,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="GymManagement/Views/Home/Index.cshtml">
     <Files>
       <File FileName="../SQLExercises/ExerciseName.sql" />
-      <File FileName="GymManagement/Views/Home/Index.cshtml" Line="30" Column="35" />
+      <File FileName="GymManagement/Views/Home/Index.cshtml" Line="66" Column="31" />
       <File FileName="GymManagement/Views/Home/Privacy.cshtml" Line="1" Column="1" />
       <File FileName="GymManagement/Controllers/HomeController.cs" Line="11" Column="1" />
       <File FileName="GymManagement/Views/_ViewStart.cshtml" Line="1" Column="1" />
       <File FileName="GymManagement/Models/Category.cs" Line="1" Column="1" />
-      <File FileName="GymManagement/Program.cs" Line="22" Column="59" />
+      <File FileName="GymManagement/Program.cs" Line="28" Column="1" />
       <File FileName="GymManagement/Views/Shared/_Layout.cshtml" Line="8" Column="52" />
       <File FileName="GymManagement/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
       <File FileName="GymManagement/Models/IProductsAll.cs" Line="12" Column="2" />
@@ -25,30 +25,33 @@
       <File FileName="GymManagement/Views/_ViewImports.cshtml" Line="1" Column="1" />
       <File FileName="GymManagement/Views/GymTrainee/Index.cshtml" Line="19" Column="39" />
       <File FileName="GymManagement/Views/Product/ViewProduct.cshtml" Line="21" Column="3" />
-      <File FileName="GymManagement/Views/GymTrainee/ViewGymTrainees.cshtml" Line="21" Column="9" />
-      <File FileName="GymManagement/Models/IGymTrainee.cs" Line="6" Column="34" />
-      <File FileName="GymManagement/Models/GymTraineeAll.cs" Line="24" Column="33" />
+      <File FileName="GymManagement/Views/GymTrainee/ViewGymTrainees.cshtml" Line="1" Column="1" />
+      <File FileName="GymManagement/Models/IGymTrainee.cs" Line="1" Column="1" />
+      <File FileName="GymManagement/Models/GymTraineeAll.cs" Line="30" Column="1" />
       <File FileName="GymManagement/Controllers/ProductController.cs" Line="34" Column="10" />
-      <File FileName="GymManagement/Controllers/GymController.cs" Line="30" Column="10" />
-      <File FileName="GymManagement/Views/Gym/Index.cshtml" Line="27" Column="1" />
-      <File FileName="GymManagement/appsettings.json" Line="1" Column="1" />
+      <File FileName="GymManagement/Controllers/GymController.cs" Line="11" Column="2" />
+      <File FileName="GymManagement/Views/Gym/Index.cshtml" Line="1" Column="1" />
+      <File FileName="GymManagement/appsettings.json" />
       <File FileName="GymManagement/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="GymManagement/Models/Class.cs" Line="12" Column="1" />
+      <File FileName="GymManagement/Models/ClassAll.cs" Line="20" Column="55" />
+      <File FileName="GymManagement/Models/IClass.cs" Line="11" Column="1" />
+      <File FileName="GymManagement/Views/Class/Class.cshtml" Line="19" Column="37" />
+      <File FileName="GymManagement/Views/Class/ClassIndex.cshtml" Line="13" Column="10" />
+      <File FileName="GymManagement/Controllers/ClassController.cs" Line="32" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="GymManagement" expanded="True">
+          <Node name="GymManagement">
             <Node name="GymManagement">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Views">
-                <Node name="Gym" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Class" expanded="True" />
                 <Node name="GymTrainee" expanded="True" />
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-                <Node name="Product" expanded="True" />
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>

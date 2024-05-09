@@ -17,11 +17,15 @@
     <None Remove="Views\GymTrainee\" />
     <None Remove="Views\Gym\" />
     <None Remove="Views\Class\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="Views\ChatMessage\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Product\" />
     <Folder Include="Views\GymTrainee\" />
     <Folder Include="Views\Gym\" />
     <Folder Include="Views\Class\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\ChatMessage\" />
   </ItemGroup>
 </Project>

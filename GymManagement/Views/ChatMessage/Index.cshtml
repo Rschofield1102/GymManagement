@@ -1,0 +1,74 @@
+﻿@model List<ChatMessage>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Box</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .chat-box {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+        }
+
+            .chat-message .sender {
+                font-weight: bold;
+                color: #333;
+            }
+
+            .chat-message .timestamp {
+                font-size: 0.8em;
+                color: #999;
+            }
+
+        .input-box {
+            display: flex;
+        }
+
+            .input-box input[type="text"] {
+                flex: 1;
+                padding: 8px;
+                margin-right: 10px;
+            }
+
+            .input-box button {
+                padding: 8px 15px;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        @foreach (var message in Model)
+        {
+            <div class="chat-message">
+                <span class="sender">@message.Sender:</span>
+                <span>@message.Text</span>
+                <span class="timestamp">@message.Timestamp.ToString("HH:mm:ss")</span>
+            </div>
+        }
+    </div>
+
+    <form method="post" action="@Url.Action("SendMessage")" class="input-box">
+        <input type="text" name="sender" placeholder="Your Name" required />
+        <input type="text" name="text" placeholder="Type your message..." required />
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

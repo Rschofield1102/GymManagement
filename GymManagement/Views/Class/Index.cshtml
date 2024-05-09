@@ -1,0 +1,26 @@
+﻿
+@model IEnumerable<Class>
+
+<h2>Class Schedule</h2>
+
+<table class="table">
+    <tr>
+
+        <th>Class Name</th>
+        <th>Schedule</th>
+        <th>Capacity</th>
+        <
+    </tr>
+    @foreach (var Class in Model)
+    {
+        <tr>
+
+            <td>@Class.ClassName</td>
+            <td>@Class.Schedule</td>
+            <td>@Class.Capacity</td>
+
+
+        </tr>
+    }
+
+</table>

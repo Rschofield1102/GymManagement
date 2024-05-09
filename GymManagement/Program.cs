@@ -1,6 +1,10 @@
 ﻿using GymManagement.Models;
 using MySql.Data.MySqlClient;
 using System.Data;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +21,9 @@ builder.Services.AddScoped<IDbConnection>((s) =>
 
 builder.Services.AddTransient<IProductsAll, ProductAll>();
 
+builder.Services.AddTransient<IGymTrainee, GymTraineeAll>();
 
+builder.Services.AddTransient<IClass, ClassAll>();
 
 
 
@@ -42,5 +48,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+
 app.Run();
+
+
 

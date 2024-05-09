@@ -1,28 +1,30 @@
-﻿@model IEnumerable<Product>
+﻿
+@model IEnumerable<Product>
 
 <h2>Products</h2>
 
 <table class="table">
     <tr>
+
         <th>Yearly Price</th>
         <th>Monthly Price</th>
         <th>Daily Price</th>
         <th>Tanning Price</th>
     </tr>
-@foreach(var product in Model)
-{
-    <tr>
-         <td>@product.YearPrice</td>
-         <td>@product.MonthlyPrice</td>
-         <td>@product.DailyPrice</td>
-        <td>@product.TanningPrice</td>
+    @foreach (var product in Model)
+    {
+        <tr>
 
-    </tr>
-}
+            <td>@product.Yearly_Price</td>
+            <td>@product.Monthly_Price</td>
+            <td>@product.Daily_Price</td>
+            <td>@product.Tanning</td>
 
-
+        </tr>
+    }
 
 
 
 
 </table>
+

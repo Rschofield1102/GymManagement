@@ -1,9 +1,640 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cutting Edge Gym</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Reset default margin and padding */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f9f9f9;
+                color: #000; /* Default text color changed to black */
+            }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+            /* Header styles */
+            header.hero {
+                height: 100vh;
+                background-image: url('https://i.imghippo.com/files/uCXbc1715265686.jpg');
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff; /* Header text color (white) */
+                text-align: center;
+                padding: 20px;
+            }
 
+            nav {
+                margin-top: 20px;
+            }
+
+                nav ul {
+                    list-style: none;
+                    padding: 0;
+                }
+
+                    nav ul li {
+                        display: inline-block;
+                        margin-right: 20px;
+                    }
+
+                        nav ul li a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: bold;
+                            transition: color 0.3s ease;
+                        }
+
+                            nav ul li a:hover {
+                                color: #e74c3c;
+                            }
+
+            .hero-content {
+                max-width: 600px;
+            }
+
+            .hero h1 {
+                font-size: 3.5em; /* Increase h1 font size */
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #e74c3c; /* Change h1 text color to black */
+            }
+
+
+
+            .button {
+                display: inline-block;
+                padding: 12px 32px;
+                background-color: #e74c3c;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .button:hover {
+                    background-color: #c0392b;
+                }
+
+            /* About section styles */
+            .about {
+                text-align: center;
+                padding: 80px 20px;
+                background-color: #ecf0f1;
+            }
+
+            .about-content {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .about h2 {
+                font-size: 3.0em; /* Increase h2 font size */
+                margin-bottom: 30px;
+                color: #000; /* Change h2 text color to black */
+            }
+
+            .about p {
+                font-size: 2.2em; /* Increase paragraph font size */
+                line-height: 1.6;
+                color: #000;
+            }
+
+            /* Footer styles */
+            footer {
+                background-color: #2c3e50;
+                color: #000;
+                text-align: center;
+                padding: 30px 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header class="hero">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Class/Index">Classes</a></li>
+                    <li><a href="Gym/Index">Employees</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+          
+
+            <div class="hero-content">
+                <h1>Welcome</h1>
+                <p>Your journey to a stronger, healthier you starts here.</p>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>At Cutting Edge Gym, we're committed to pushing boundaries and achieving fitness excellence. Join us and discover the difference.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Cutting Edge Gym</p>
+        </footer>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cutting Edge Gym</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Reset default margin and padding */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+
+            /* Header styles */
+            header.hero {
+                height: 100vh;
+                background-image: url('https://i.imghippo.com/files/uCXbc1715265686.jpg');
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+
+            nav {
+                margin-top: 20px;
+            }
+
+                nav ul {
+                    list-style: none;
+                    padding: 0;
+                }
+
+                    nav ul li {
+                        display: inline-block;
+                        margin-right: 20px;
+                    }
+
+                        nav ul li a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: bold;
+                            transition: color 0.3s ease;
+                        }
+
+                            nav ul li a:hover {
+                                color: #e74c3c;
+                            }
+
+            .hero-content {
+                max-width: 600px;
+            }
+
+            .hero h1 {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+                margin-bottom: 40px;
+            }
+
+            .button {
+                display: inline-block;
+                padding: 12px 32px;
+                background-color: #e74c3c;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                .button:hover {
+                    background-color: #c0392b;
+                }
+
+            /* About section styles */
+            .about {
+                text-align: center;
+                padding: 80px 20px;
+                background-color: #ecf0f1;
+            }
+
+            .about-content {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .about h2 {
+                font-size: 2.5em;
+                margin-bottom: 30px;
+                color: #333;
+            }
+
+            .about p {
+                font-size: 1.1em;
+                line-height: 1.6;
+                color: #666;
+            }
+
+            /* Footer styles */
+            footer {
+                background-color: #2c3e50;
+                color: #fff;
+                text-align: center;
+                padding: 30px 0;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header class="hero">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Class/Index">Classes</a></li>
+                    <li><a href="Gym/Index">Employees</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>Welcome to Cutting Edge Gym</h1>
+                <p>Your journey to a stronger, healthier you starts here.</p>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>At Cutting Edge Gym, we're committed to pushing boundaries and achieving fitness excellence. Join us and discover the difference.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Cutting Edge Gym</p>
+        </footer>
+    </body>
+    </html>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cutting Edge Gym</title>
+        <link rel="stylesheet" href="styles.css">
+     Linking external stylesheet for styling
+    <style>
+            /* Reset default margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            position: relative;
+            height: 100vh; /* Set header height to full viewport height */
+            background-image: url('https://i.imghippo.com/files/uCXbc1715265686.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center; /* Center the navigation links horizontally */
+            }
+
+                nav ul li {
+                    margin-right: 20px;
+                }
+
+                    nav ul li a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: bold;
+                        transition: color 0.3s ease;
+                    }
+
+                        nav ul li a:hover {
+                            color: #e74c3c;
+                        }
+
+        /* Hero section styles */
+        .hero {
+            background-color: rgba(52, 152, 219, 0.8); /* Semi-transparent overlay for better readability */
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+            .hero h1 {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+                margin-bottom: 40px;
+            }
+
+        .button {
+            display: inline-block;
+            padding: 12px 32px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .button:hover {
+                background-color: #c0392b;
+            }
+
+        /* About section styles */
+        .about {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ecf0f1;
+        }
+
+            .about h2 {
+                font-size: 2.5em;
+                margin-bottom: 30px;
+                color: #333;
+            }
+
+            .about p {
+                font-size: 1.1em;
+                line-height: 1.6;
+                color: #666;
+            }
+
+        /* Footer styles */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+            footer p {
+                font-size: 1.1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Class/Index">Classes</a></li>
+                    <li><a href="Gym/Index">Employees</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="https://i.imghippo.com/files/uCXbc1715265686.jpg" alt="" border="0">
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Cutting Edge Gym</h1>
+                <p>Your journey to a stronger, healthier you starts here.</p>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>At Cutting Edge Gym, we're committed to pushing boundaries and achieving fitness excellence. Join us and discover the difference.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Cutting Edge Gym</p>
+        </footer>
+    </body>*@
+
+
+
+
+
+
+
+@*</html>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fitness Front Page</title>
+        <link rel="stylesheet" href="styles.css">
+     Linking external stylesheet for styling
+    <style>
+            /* Additional inline CSS for quick styling */
+            body {
+                font-family: Arial, sans-serif; /* Setting a common font-family for better readability */
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #f4f4f4; /* Setting a light background color */
+
+            }
+
+            header {
+                background-color: #333; /* Styling the header with a dark background */
+                color: #fff;
+                padding: 10px 0;
+            }
+
+                header .logo {
+                    display: inline-block;
+                    margin-left: 20px;
+                }
+
+                header nav ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                    header nav ul li {
+                        display: inline;
+                        margin-right: 15px;
+                    }
+
+                        header nav ul li a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+
+            .hero {
+                text-align: center;
+                padding: 100px 0;
+                background-image: url('fitness-hero.jpg'); /* Setting a background image for the hero section */
+                color: #fff;
+            }
+
+                .hero h1 {
+                    font-size: 3em;
+                    margin-bottom: 20px;
+                }
+
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-top: 20px;
+                background-color: #e91e63;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .about {
+                padding: 50px 0;
+                text-align: center;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px 0;
+                background-color: #333;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="fitness-logo.png" alt="Fitness Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Class/Index">Classes</a></li>
+                    <li><a href="Gym/Index">Employees</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Fitness Zone</h1>
+                <p>Your journey to a healthier lifestyle starts here.</p>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>At Fitness Zone, we are dedicated to helping you achieve your fitness goals. Our expert trainers and wide range of classes ensure there's something for everyone.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Fitness Zone</p>
+        </footer>
+    </body>
+
+    </html>*@

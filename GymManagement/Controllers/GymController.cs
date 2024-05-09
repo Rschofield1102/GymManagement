@@ -11,11 +11,11 @@ namespace GymManagement.Controllers
 {
 
 
-    public class ProductController : Controller
+    public class GymController : Controller
     {
-        private readonly IProductsAll repo;
+        private readonly IGymTrainee repo;
 
-        public ProductController(IProductsAll repo)
+        public GymController(IGymTrainee repo)
         {
             this.repo = repo;
         }
@@ -23,17 +23,17 @@ namespace GymManagement.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            var products = repo.GetAllProducts();
+            IEnumerable<GymTrainee> gymTrainees = repo.GetAllProducts();
 
-            // sends products to view file.
-            return View(products);
+           
+            return View(gymTrainees);
         }
 
 
         public IActionResult ViewProduct(int id)
         {
-            var product = repo.GetProduct(id);
-            return View(product);
+            var gymTrainee = repo.GetProduct(id);
+            return View(gymTrainee);
         }
 
 

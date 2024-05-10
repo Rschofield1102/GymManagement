@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.4.0" />
     <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Product\" />
@@ -19,6 +20,7 @@
     <None Remove="Views\Class\" />
     <None Remove="Views\Contact\" />
     <None Remove="Views\ChatMessage\" />
+    <None Remove="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Product\" />
@@ -27,5 +29,6 @@
     <Folder Include="Views\Class\" />
     <Folder Include="Views\Contact\" />
     <Folder Include="Views\ChatMessage\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
 </Project>

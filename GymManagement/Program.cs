@@ -27,6 +27,10 @@ builder.Services.AddTransient<IClass, ClassAll>();
 
 
 
+
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

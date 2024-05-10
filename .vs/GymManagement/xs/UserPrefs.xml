@@ -8,37 +8,43 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="GymManagement/Views/Home/Index.cshtml">
     <Files>
       <File FileName="../SQLExercises/ExerciseName.sql" />
-      <File FileName="GymManagement/Views/Home/Index.cshtml" Line="66" Column="31" />
-      <File FileName="GymManagement/Views/Home/Privacy.cshtml" Line="1" Column="1" />
-      <File FileName="GymManagement/Controllers/HomeController.cs" Line="11" Column="1" />
-      <File FileName="GymManagement/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="GymManagement/Models/Category.cs" Line="1" Column="1" />
-      <File FileName="GymManagement/Program.cs" Line="28" Column="1" />
-      <File FileName="GymManagement/Views/Shared/_Layout.cshtml" Line="8" Column="52" />
-      <File FileName="GymManagement/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
-      <File FileName="GymManagement/Models/IProductsAll.cs" Line="12" Column="2" />
-      <File FileName="GymManagement/Models/Product.cs" Line="4" Column="21" />
-      <File FileName="GymManagement/Models/ProductAll.cs" Line="30" Column="1" />
-      <File FileName="GymManagement/Models/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="GymManagement/Models/GymTrainee.cs" Line="13" Column="39" />
+      <File FileName="GymManagement/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="GymManagement/Views/Home/Privacy.cshtml" />
+      <File FileName="GymManagement/Controllers/HomeController.cs" />
+      <File FileName="GymManagement/Views/_ViewStart.cshtml" />
+      <File FileName="GymManagement/Models/Category.cs" />
+      <File FileName="GymManagement/Program.cs" />
+      <File FileName="GymManagement/Views/Shared/_Layout.cshtml" />
+      <File FileName="GymManagement/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="GymManagement/Models/IProductsAll.cs" />
+      <File FileName="GymManagement/Models/Product.cs" />
+      <File FileName="GymManagement/Models/ProductAll.cs" />
+      <File FileName="GymManagement/Models/ErrorViewModel.cs" />
+      <File FileName="GymManagement/Models/GymTrainee.cs" />
       <File FileName="GymManagement/Views/Product/Index.cshtml" Line="26" Column="1" />
-      <File FileName="GymManagement/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="GymManagement/Views/_ViewImports.cshtml" />
       <File FileName="GymManagement/Views/GymTrainee/Index.cshtml" Line="19" Column="39" />
-      <File FileName="GymManagement/Views/Product/ViewProduct.cshtml" Line="21" Column="3" />
+      <File FileName="GymManagement/Views/Product/ViewProduct.cshtml" />
       <File FileName="GymManagement/Views/GymTrainee/ViewGymTrainees.cshtml" Line="1" Column="1" />
-      <File FileName="GymManagement/Models/IGymTrainee.cs" Line="1" Column="1" />
-      <File FileName="GymManagement/Models/GymTraineeAll.cs" Line="30" Column="1" />
-      <File FileName="GymManagement/Controllers/ProductController.cs" Line="34" Column="10" />
-      <File FileName="GymManagement/Controllers/GymController.cs" Line="11" Column="2" />
-      <File FileName="GymManagement/Views/Gym/Index.cshtml" Line="1" Column="1" />
+      <File FileName="GymManagement/Models/IGymTrainee.cs" />
+      <File FileName="GymManagement/Models/GymTraineeAll.cs" />
+      <File FileName="GymManagement/Controllers/ProductController.cs" />
+      <File FileName="GymManagement/Controllers/GymController.cs" />
+      <File FileName="GymManagement/Views/Gym/Index.cshtml" Line="28" Column="1" />
       <File FileName="GymManagement/appsettings.json" />
-      <File FileName="GymManagement/Views/Shared/Error.cshtml" Line="1" Column="1" />
-      <File FileName="GymManagement/Models/Class.cs" Line="12" Column="1" />
-      <File FileName="GymManagement/Models/ClassAll.cs" Line="20" Column="55" />
-      <File FileName="GymManagement/Models/IClass.cs" Line="11" Column="1" />
-      <File FileName="GymManagement/Views/Class/Class.cshtml" Line="19" Column="37" />
+      <File FileName="GymManagement/Views/Shared/Error.cshtml" />
+      <File FileName="GymManagement/Models/Class.cs" />
+      <File FileName="GymManagement/Models/ClassAll.cs" />
+      <File FileName="GymManagement/Models/IClass.cs" />
       <File FileName="GymManagement/Views/Class/ClassIndex.cshtml" Line="13" Column="10" />
-      <File FileName="GymManagement/Controllers/ClassController.cs" Line="32" Column="1" />
+      <File FileName="GymManagement/Controllers/ClassController.cs" />
+      <File FileName="GymManagement/Models/Contact.cs" Line="14" Column="1" />
+      <File FileName="GymManagement/Controllers/ContactController.cs" Line="27" Column="10" />
+      <File FileName="GymManagement/Views/Contact/Index.cshtml" Line="65" Column="10" />
+      <File FileName="GymManagement/Views/Class/Index.cshtml" Line="12" Column="9" />
+      <File FileName="GymManagement/Models/ChatMessage.cs" Line="14" Column="1" />
+      <File FileName="GymManagement/Controllers/ChatController.cs" Line="37" Column="10" />
+      <File FileName="GymManagement/Views/ChatMessage/Index.cshtml" Line="23" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -46,13 +52,8 @@
           <Option id="ShowAllFiles" value="True" />
           <Node name="GymManagement">
             <Node name="GymManagement">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Class" expanded="True" />
-                <Node name="GymTrainee" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
+              <Node name="Views">
+                <Node name="ChatMessage" expanded="True" />
               </Node>
             </Node>
           </Node>

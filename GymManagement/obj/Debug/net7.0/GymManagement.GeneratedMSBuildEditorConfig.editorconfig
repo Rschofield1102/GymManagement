@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/lee/Desktop/repos/GymManagement/GymManagement
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/lee/Desktop/repos/GymManagement/GymManagement/Views/Account/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lee/Desktop/repos/GymManagement/GymManagement/Views/ChatMessage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhdE1lc3NhZ2UvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
